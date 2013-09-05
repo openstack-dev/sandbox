@@ -20,6 +20,7 @@
 
 def main():
     print "The exquisite corpse"
+    print "Looked so pale and beautiful"
 
 if __name__ == "__main__":
     main()
