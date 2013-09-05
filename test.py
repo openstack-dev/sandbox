@@ -21,6 +21,7 @@
 def main():
     print "The exquisite corpse"
     print "Looked so pale and beautiful"
+    print "And yet it's still dead"
 
 if __name__ == "__main__":
     main()
