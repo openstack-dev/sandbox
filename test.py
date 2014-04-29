@@ -24,6 +24,7 @@ def main():
     print "And yet it's still dead"
     print "...and then it woke up to eat the living...."
     print "daylights"
+    print "are brighter than nightlights"
 
 if __name__ == "__main__":
     main()
