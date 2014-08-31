@@ -26,6 +26,7 @@ def main():
     print "daylights"
     print "are brighter than nightlights"
     print "I like vi"
+    print "'Sometimes, you have to roll a hard six.' – Adama"
 
 if __name__ == "__main__":
     main()
