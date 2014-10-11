@@ -1,1 +1,1 @@
-print("huga")
+print("huga 'test2'")
