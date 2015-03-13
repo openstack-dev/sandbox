@@ -27,6 +27,7 @@ def main():
     print "are brighter than nightlights"
     print "I like vi"
     print "'Sometimes, you have to roll a hard six.' – Adama"
+    print "The snake which cannot cast its skin has to die."
 
 if __name__ == "__main__":
     main()
