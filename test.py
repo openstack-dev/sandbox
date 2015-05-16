@@ -30,5 +30,6 @@ def main():
     print "The snake which cannot cast its skin has to die."
     print "My name is khan............................................................................................"
     print ":-)"
+    print "First lame commit:-)"
 if __name__ == "__main__":
     main()
