@@ -29,5 +29,6 @@ def main():
     print "'Sometimes, you have to roll a hard six.' – Adama"
     print "The snake which cannot cast its skin has to die."
     print "My name is khan............................................................................................"
+    print ":-)"
 if __name__ == "__main__":
     main()
