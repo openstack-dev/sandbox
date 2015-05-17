@@ -26,6 +26,7 @@ def main():
     print "daylights"
     print "are brighter than nightlights"
     print "I like vi"
+    print "I like vim"
     print "'Sometimes, you have to roll a hard six.' – Adama"
     print "The snake which cannot cast its skin has to die."
     print "My name is khan............................................................................................"
