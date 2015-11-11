@@ -33,5 +33,6 @@ def main():
     print "First lame commit:-)"
     print "SB"
     print "That which does not kill me makes me strong."
+    print "testing..."
 if __name__ == "__main__":
     main()
