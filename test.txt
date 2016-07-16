@@ -1,4 +1,5 @@
 hello OS cirros
 world
+foo
 123
 1234
