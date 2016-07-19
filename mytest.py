@@ -11,5 +11,10 @@
 #    under the License.
 
 import os
+import json
 
 print 'Hello world!'
+data = {
+        'name' : 'mytest'
+        }
+json_str = json.dumps(data)
