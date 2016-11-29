@@ -1,2 +1,0 @@
-GPS Coordinates for Upstream Training in Barcelona
-41.409340, 2.217590
