@@ -1,0 +1,2 @@
+This is cuongnq's first CL for OpenStack
+Hello world
