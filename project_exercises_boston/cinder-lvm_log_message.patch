@@ -1,0 +1,54 @@
+From ff6c974e990c660de7d46ed53da0f6f516dc76a3 Mon Sep 17 00:00:00 2001
+From: "Jay S. Bryant" <jsbryant@electronicjungle.net>
+Date: Thu, 4 May 2017 13:15:59 -0500
+Subject: [PATCH] Add log messages to volume create flow
+
+This patch adds some additional logging when creating
+LVM volumes.
+---
+ cinder/manager.py            | 2 +-
+ cinder/volume/drivers/lvm.py | 6 +++++-
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/cinder/manager.py b/cinder/manager.py
+index d5bc6ef..a5686d9 100644
+--- a/cinder/manager.py
++++ b/cinder/manager.py
+@@ -58,8 +58,8 @@ import oslo_messaging as messaging
+ from oslo_service import periodic_task
+ from oslo_utils import timeutils
+ 
+-from cinder import context
+ from cinder import db
++from cinder import context
+ from cinder.db import base
+ from cinder import exception
+ from cinder.i18n import _LE, _LI, _LW
+diff --git a/cinder/volume/drivers/lvm.py b/cinder/volume/drivers/lvm.py
+index 2271468..bc1abf4 100644
+--- a/cinder/volume/drivers/lvm.py
++++ b/cinder/volume/drivers/lvm.py
+@@ -196,6 +196,8 @@ class LVMVolumeDriver(driver.VolumeDriver):
+         if vg is not None:
+             vg_ref = vg
+ 
++        LOG.debug("Size is %(size_value)s ",
++                  {'size_value': sise})
+         vg_ref.create_volume(name, size, lvm_type, mirror_count)
+ 
+     def _update_volume_stats(self):
+@@ -360,8 +362,10 @@ class LVMVolumeDriver(driver.VolumeDriver):
+         if self.configuration.lvm_mirrors:
+             mirror_count = self.configuration.lvm_mirrors
+ 
++        size = int(volume['size']) * 2
++
+         self._create_volume(volume['name'],
+-                            self._sizestr(volume['size']),
++                            self._sizestr(size),
+                             self.configuration.lvm_type,
+                             mirror_count)
+ 
+-- 
+2.7.4
+
