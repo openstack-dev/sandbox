@@ -1,0 +1,5 @@
+- project:
+    name: openstack-dev/sandbox
+    check:
+      jobs:
+        - tox-pep8
