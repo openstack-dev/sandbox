@@ -1,5 +1,4 @@
 [gerrit]
-#host=review.openstack.org
-host=104.130.246.91
+host=review.openstack.org
 port=29418
 project=openstack-dev/sandbox.git
