@@ -6,3 +6,6 @@
     post:
       jobs:
         - publish-openstack-python-branch-tarball
+    release:
+      jobs:
+        - release-openstack-python
