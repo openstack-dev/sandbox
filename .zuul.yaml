@@ -2,7 +2,13 @@
     name: openstack-dev/sandbox
     check:
       jobs:
-        - tox-pep8
+        - tox-docs
+    gate:
+      jobs:
+        - tox-docs
     post:
       jobs:
+        - publish-openstack-python-docs:
+            vars:
+              afs_target: 'sandbox'
         - publish-openstack-python-branch-tarball
