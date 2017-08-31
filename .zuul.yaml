@@ -10,5 +10,5 @@
       jobs:
         - publish-openstack-python-docs:
             vars:
-              afs_target: 'sandbox'
+              afs_publisher_target: 'sandbox'
         - publish-openstack-python-branch-tarball
