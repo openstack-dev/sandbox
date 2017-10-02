@@ -3,9 +3,3 @@
     check:
       jobs:
         - tox-docs
-    post:
-      jobs:
-        - publish-openstack-python-docs:
-            vars:
-              afs_publisher_target: 'sandbox'
-        - publish-openstack-python-branch-tarball
