@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+    - name: Install ansible via pip
+      pip:
+        name: ansible
+        extra_args: --user
