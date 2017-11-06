@@ -1,5 +1,0 @@
-- hosts: all
-  tasks:
-    - name: Print hello world
-      command: echo 'hello world'
-      changed_when: True

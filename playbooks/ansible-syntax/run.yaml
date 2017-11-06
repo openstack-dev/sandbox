@@ -1,6 +1,0 @@
-- hosts: all
-  tasks:
-    - name: Check syntax of playbooks
-      shell: ~/.local/bin/ansible-playbook -i tests/inventory --syntax-check playbooks/*/*.yaml
-      args:
-        chdir: "{{ zuul.project.src_dir }}"
