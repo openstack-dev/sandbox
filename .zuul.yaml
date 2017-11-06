@@ -1,29 +1,5 @@
-- job:
-    name: sandbox-ansible-syntax
-    description: Check syntax of ansible playbooks.
-    pre-run: playbooks/ansible-syntax/pre.yaml
-    run: playbooks/ansible-syntax/run.yaml
-    nodeset:
-      nodes:
-        - name: controller
-          label: ubuntu-xenial
-
-- job:
-    name: sandbox-hello-world
-    description: Example hello world job.
-    run: playbooks/hello-world/run.yaml
-    nodeset:
-      nodes:
-        - name: controller
-          label: ubuntu-xenial
-
 - project:
     name: openstack-dev/sandbox
     check:
       jobs:
-        - sandbox-ansible-syntax
-        - sandbox-hello-world
-    gate:
-      jobs:
-        - sandbox-hello-world
-        - sandbox-ansible-syntax
+        - tox-docs
