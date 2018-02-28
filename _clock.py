@@ -29,9 +29,9 @@ class StopWatch:
         while True:
             text = "{:02}:{:02}:{:02}".format(
                 self.hours, self.minutes, self.seconds)
-            print(text, end="r", flush=True)
-            self.count()
+            print(text, end="\r", flush=True)
             time.sleep(1)
+            self.count()
 
     def count(self):
         """Increment seconds by one, and increment all the rest"""
@@ -50,9 +50,12 @@ class StopWatch:
                   "Minutes: {}\n"
                   "Seconds: {}")
 
-        print(result.format(self.hours, self.minutes, self.seconds))
+        return result.format(self.hours, self.minutes, self.seconds)
 
 
 if __name__ == "__main__":
     WATCH = StopWatch()
-    WATCH.start()
+    try:
+        WATCH.start()
+    except KeyboardInterrupt:
+        print(WATCH)
