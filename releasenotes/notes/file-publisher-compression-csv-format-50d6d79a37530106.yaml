@@ -1,0 +1,8 @@
+---
+features:
+  - |
+    Add two new options for the existing file publisher
+    * 'compress=True' is added to provide compression of files
+      (within file rotation) to minimize disk usage and minimize bandwidth
+      in transferring these files off server
+    * 'format=csv' is added to the file publisher in order to enable CSV format
