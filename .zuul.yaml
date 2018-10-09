@@ -2,13 +2,3 @@
     check:
       jobs:
         - tox-docs
-        - bifrost-integration-tinyipa:
-            voting: false
-        - bifrost-integration-tinyipa-opensuse-423:
-            voting: false
-        - shade-ansible-stable-2.5-functional-devstack:
-            voting: false
-        - shade-ansible-functional-devstack
-        - shade-functional-devstack
-        - shade-functional-devstack-magnum
-        - shade-functional-devstack-python3
