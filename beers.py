@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
 # not use this file except in compliance with the License. You may obtain
 # a copy of the License at
@@ -10,13 +11,19 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
+from __future__ import print_function
 import argparse
 import time
 
 parser = argparse.ArgumentParser(description='Pour some beers.')
 
+
 parser.add_argument('beers', metavar='beers_to_pour', type=int,
                     help='how many beers to pour.')
+
+
+parser.add_argument('--scale', metavar='scale', type=int, default=1,
+                    help='how many nodes pouring beer.')
 
 
 def pour(beers):
@@ -29,7 +36,7 @@ def main():
     print("\nPouring beers...\n")
 
     for beer in pour(args.beers):
-        time.sleep(.7)
+        time.sleep(.7 / args.scale)
         print(beer, end="", flush=True)
 
     time.sleep(.7)
@@ -37,4 +44,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\nNo Beers for you guys 😢")
