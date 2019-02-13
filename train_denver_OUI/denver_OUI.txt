@@ -1,0 +1,27 @@
+Hello Everyone!
+
+We are glad to have you here at Upstream Institute! Please put your first
+patches in this directory :)
+
+Enjoy this Doctor Who ASCII art.
+
+ \      oo
+  \____|\mm
+  //_//\ \_\
+ /K-9/  \/_/
+/___/_____\
+-----------
+
+                   Exterminate!
+                   /
+              ___
+      D>=G==='   '.
+            |======|
+            |======|
+        )--/]IIIIII]
+           |_______|
+           C O O O D
+          C O  O  O D
+         C  O  O  O  D
+         C__O__O__O__D
+        [_____________]
