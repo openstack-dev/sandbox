@@ -1,3 +1,0 @@
-Hi!
-
-This is from the 2nd day of Upstream Institute on OpenStack Summit Vancouver 2018

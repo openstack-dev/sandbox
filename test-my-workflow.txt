@@ -1,3 +1,0 @@
-Test my workflow for OpenStack Gerrit and check if all is setup in place!
-
-Fix the bug/1775387 ... hunting ...
